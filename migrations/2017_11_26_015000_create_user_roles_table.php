@@ -23,7 +23,7 @@ class CreateUserRolesTable extends Migration
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('role_id')->unsigned()->index();
-            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
+            $table->foreign('role_id')->references('id')->on('lvroles')->onDelete('cascade');
             $table->primary(['user_id', 'role_id']);
         });
     }
