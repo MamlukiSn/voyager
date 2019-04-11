@@ -7,7 +7,7 @@ use TCG\Voyager\Events\SettingUpdated;
 
 class Setting extends Model
 {
-    protected $table = 'settings';
+    protected $table = 'lvsettings';
 
     protected $guarded = [];
 

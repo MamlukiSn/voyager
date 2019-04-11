@@ -7,6 +7,7 @@ use TCG\Voyager\Facades\Voyager;
 
 class Permission extends Model
 {
+    protected $table = 'lvpermissions';
     protected $guarded = [];
 
     public function roles()
